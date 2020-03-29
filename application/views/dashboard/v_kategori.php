@@ -171,11 +171,18 @@
 							<div class="box-body">
 								<div class="form-group">
 									<label>Bidang</label>
-									<select class="form-control" name="bidang" id="opsi1" onchange="configDDL(this, document.getElementById('opsi2'), 30)">;
+									<select class="form-control" name="bidang" id="opsi1" onchange="configDDL(this, document.getElementById('opsi2'), 30)">
 										<option value="" disabled selected>- Pilih Level -</option>
-										<option value="Pendidikan dan Pengajaran">Pendidikan dan Pengajaran</option>
-										<option value="Penelitian">Penelitian</option>
-										<option value="Pengabdian">Pengabdian</option>
+										<?php 
+											$bidang = $this->db->query("select * from data_bidang_kj")->result();
+											foreach($bidang as $b){
+												?>
+												<option value="<?php echo $b->nama_bidang;?>">
+													<?php echo $b->nama_bidang;?>
+												</option> 
+												<?php
+											}
+										?>
 									</select>
 									<?php echo form_error('bidang'); ?>
 								</div>
