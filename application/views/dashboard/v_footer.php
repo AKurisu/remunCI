@@ -1,8 +1,8 @@
 	<footer class="main-footer">
 		<div class="pull-right hidden-xs">
-			<b>Ebook</b> Membuat Website Sendiri Dari NOL sampai ONLINE Dengan CodeIgniter
+			<b>UNTAD</b> Remun 2020
 		</div>
-		<strong>Website Malas Ngoding</strong> . All rights reserved.
+		<strong>remunCI Project</strong> . All rights reserved.
 	</footer>
 	</div>
 

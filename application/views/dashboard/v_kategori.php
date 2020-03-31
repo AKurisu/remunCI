@@ -171,7 +171,7 @@
 							<div class="box-body">
 								<div class="form-group">
 									<label>Bidang</label>
-									<select class="form-control" name="bidang" id="opsi1" onchange="configDDL(this, document.getElementById('opsi2'), 30)">
+									<select class="form-control" name="bidang" id="opsi1" onchange="configDDL(this, document.getElementById('opsi2'), 30); ambilData(this);">
 										<option value="" disabled selected>- Pilih Level -</option>
 										<?php 
 											$bidang = $this->db->query("select * from data_bidang_kj")->result();
@@ -367,8 +367,20 @@
 				</div>
 
 			</div>
-		</div>
-
+		</div>		
 	</section>
-
+	<script>
+		function ambilData(obj1){
+			var uru = document.getElementbyId('uraian');
+			uru.value = obj1.selectedIndex.index;
+			switch(obj1.name){
+				case 'bidang':
+					<?php 
+						$kinerja = $this->db->query('select * from kinerja where id_bidang =' + $bidang);
+					?>
+				case 'kinerja':
+				case 'tugas':
+			}
+		}
+</script>	
 </div>

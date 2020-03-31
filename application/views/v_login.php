@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Malas Ngoding | Log in</title>
+  <title>Remun UNTAD | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -21,8 +21,9 @@
 </head>
 <body class="hold-transition login-page">
   <div class="login-box">
-    <div class="login-logo">
-      <a href="<?php echo base_url(); ?>"><b>Website</b>Saya</a>
+    <img src="<?php echo base_url(); ?>/assets/custom/untad.png" class="info-box-icon bg-transparent" style="margin-left: 10px">  
+    <div class="login-logo" style="padding-top: 15px; margin-bottom: 40px">
+      <a href="<?php echo base_url(); ?>"><b>Remun</b>UNTAD</a>
     </div>
     <!-- /.login-logo -->
 
@@ -39,7 +40,6 @@
     ?>
 
     <div class="login-box-body">
-      <!-- <p class="login-box-msg">www.malasngoding.com</p> -->
 
       <form action="<?php echo base_url().'login/aksi' ?>" method="post">
 
