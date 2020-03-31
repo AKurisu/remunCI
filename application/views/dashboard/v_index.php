@@ -73,7 +73,7 @@
 								<div class="table-responsive">
 									<table class="table table-bordered table-hover">
 										<thead class="thead-dark">
-											<tr><th colspan="3">Grade <a class="pull-right">
+											<tr><th colspan="3">Grade <a class="pull-right text-warning">
 											<?php if($user->pengguna_jd == "Dosen Biasa") {
 												echo "*Khusus Dosen TT";
 											} ?> </a> </th></tr>
@@ -94,7 +94,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4">
+							<div class="col-lg-8">
 								<div class="table-responsive">
 									<table class="table table-bordered table-hover">
 										<thead class="thead-dark">

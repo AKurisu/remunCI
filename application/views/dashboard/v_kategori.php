@@ -178,7 +178,7 @@
 											foreach($bidang as $b){
 												?>
 												<option value="<?php echo $b->nama_bidang;?>">
-													<?php echo $b->nama_bidang;?>
+													<?php echo $b->nama_bidang; $id= $b->id;?>
 												</option> 
 												<?php
 											}
@@ -369,17 +369,17 @@
 			</div>
 		</div>		
 	</section>
+	<?php 
+		$kinerja = $this->db->query("select * from data_kinerja_kj");
+		$tugas = $this->db->query("select * from data_tugas_kj");
+	?>
 	<script>
 		function ambilData(obj1){
-			var uru = document.getElementbyId('uraian');
-			uru.value = obj1.selectedIndex.index;
 			switch(obj1.name){
-				case 'bidang':
-					<?php 
-						$kinerja = $this->db->query('select * from kinerja where id_bidang =' + $bidang);
-					?>
+				case 'bidang':		
 				case 'kinerja':
 				case 'tugas':
+				break;
 			}
 		}
 </script>	

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Malas Ngoding | Dashboard</title>
+	<title>Remun UNTAD | Dashboard</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/font-awesome/css/font-awesome.min.css">
@@ -26,22 +26,22 @@
 				<span class="logo-lg"><b>Remunerasi</b>Dosen</span>
 			</a>
 			
-			<nav class="navbar navbar-static-top">
+			<nav class="navbar navbar-static-top" style="padding: 0">
 				
-				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="padding: 13px 15px;">
 					<span class="sr-only">Toggle navigation</span>
 				</a>
 
 				<div class="navbar-custom-menu">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav" >
 						<li class="dropdown user user-menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+								<img src="<?php echo base_url(); ?>assets/custom/untad.png" class="user-image" alt="User Image">
 								<span class="hidden-xs">HAK AKSES : <b><?php echo $this->session->userdata('level') ?></b></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="user-header">
-									<img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+									<img src="<?php echo base_url(); ?>assets/custom/untad.png" class="img-circle" alt="User Image">
 									<p>
 										<?php echo $this->session->userdata('username') ?>
 										<small>Hak akses : <?php echo $this->session->userdata('level') ?></small>
@@ -67,7 +67,7 @@
 			<section class="sidebar">
 				<div class="user-panel">
 					<div class="pull-left image">
-						<img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+						<img src="<?php echo base_url(); ?>assets/custom/untad.png" class="img-circle" alt="User Image">
 					</div>
 					<div class="pull-left info">
 						<?php 
@@ -138,7 +138,7 @@
 							<i class="fa fa-lock"></i>
 							<span>GANTI PASSWORD</span>
 						</a>
-					</li -->>
+					</li -->
 					<li>
 						<a href="<?php echo base_url().'dashboard/keluar' ?>">
 							<i class="fa fa-share"></i>
